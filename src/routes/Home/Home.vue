@@ -1,32 +1,22 @@
 <template>
-    <div>
-        <Button />
-        <Container />
-        <Picture />
-        <Input />
-        <Link />
-        <Loader />
-    </div>
+    <Container>
+        <Typography>Typography</Typography>
+        <Typography>Container</Typography>
+        <Typography>Column</Typography>
+        <Typography>Row</Typography>
+        <Button>Button</Button>
+        <Link href="https://nave.rs" text="Link" target="_blank"/>
+        <Row>
+            <Loader />
+        </Row>
+        <Picture src="https://via.placeholder.com/300"/>
+        <Input placeholder="Placeholder" label="Label"/>
+    </Container>
 </template>
 
 <script>
 
-import Button from '../../components/Button'
-import Container from '../../components/Container'
-import Picture from '../../components/Picture'
-import Input from '../../components/Input'
-import Link from '../../components/Link'
-import Loader from '../../components/Loader'
-
 export default {
-    name: 'Home',
-    components: {
-        Button,
-        Container,
-        Picture,
-        Input,
-        Link,
-        Loader
-    }
+    name: 'Home'
 }
 </script>

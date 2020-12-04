@@ -6,13 +6,15 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service lint && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "vue-cli-service serve",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@naveteam/pandora-frontend": "^1.0.1",
     "@sentry/vue": "^5.28.0",
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
+    "git-cz": "^4.7.5",
     "node": "^15.3.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",

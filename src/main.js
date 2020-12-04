@@ -46,6 +46,25 @@ if (process.env.VUE_APP_NODE_ENV === 'production') {
 
 Vue.config.productionTip = false
 
+Vue.component('Column', { template: `<div class="column"><slot /></div>`})
+Vue.component('Row', { template: `<div class="row"><slot /></div>`})
+Vue.component('Typography', { template: `<p><slot /></p>`})
+Vue.component('Button', { template: `<button class="button"><slot /></button>`})
+Vue.component('Container', { template: `<div class="column container"><slot /></div>`})
+Vue.component('Link', { props: ['href', 'text', 'target'], template: `<a :href="href" :target="target">{{ text }}</a>`})
+Vue.component('Loader', { template: `<p><slot>carregando...</slot></p>`})
+Vue.component('Picture', { props: ['src', 'alt'], template: `<div><img class="image" :src="src" :alt="alt"></div>`})
+Vue.component('Input', 
+{
+  props: ['label', 'placeholder'],
+  template: `
+  <Column class="input-container">
+    <Typography class="label">{{label}}</Typography>
+    <input :placeholder="placeholder"></input>
+  </Column>
+  `
+})
+
 new Vue({
   router,
   render: h => h(App),
