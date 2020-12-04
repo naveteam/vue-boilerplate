@@ -16,7 +16,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/login'
     },
     {
       path: '/home',
@@ -54,16 +54,15 @@ Vue.component('Container', { template: `<div class="column container"><slot /></
 Vue.component('Link', { props: ['href', 'text', 'target'], template: `<a :href="href" :target="target">{{ text }}</a>`})
 Vue.component('Loader', { template: `<p><slot>carregando...</slot></p>`})
 Vue.component('Picture', { props: ['src', 'alt'], template: `<div><img class="image" :src="src" :alt="alt"></div>`})
-Vue.component('Input', 
-{
-  props: ['label', 'placeholder'],
+Vue.component('Input', { props: ['label', 'placeholder', 'type'],
   template: `
-  <Column class="input-container">
-    <Typography class="label">{{label}}</Typography>
-    <input :placeholder="placeholder"></input>
-  </Column>
-  `
-})
+    <Column class="input-container">
+      <Typography class="label">{{label}}</Typography>
+      <input :placeholder="placeholder" :type="type" />
+    </Column>
+    `
+  }
+)
 
 new Vue({
   router,

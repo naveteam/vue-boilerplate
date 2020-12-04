@@ -60,6 +60,9 @@ export default {
   }
 
   .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
     .label {
       font-size: 0.8em;
