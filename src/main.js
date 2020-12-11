@@ -46,23 +46,15 @@ if (process.env.VUE_APP_NODE_ENV === 'production') {
 
 Vue.config.productionTip = false
 
-Vue.component('Column', { template: `<div class="column"><slot /></div>`})
-Vue.component('Row', { template: `<div class="row"><slot /></div>`})
-Vue.component('Typography', { template: `<p><slot /></p>`})
-Vue.component('Button', { template: `<button class="button"><slot /></button>`})
-Vue.component('Container', { template: `<div class="column container"><slot /></div>`})
-Vue.component('Link', { props: ['href', 'text', 'target'], template: `<a :href="href" :target="target">{{ text }}</a>`})
-Vue.component('Loader', { template: `<p><slot>carregando...</slot></p>`})
-Vue.component('Picture', { props: ['src', 'alt'], template: `<div><img class="image" :src="src" :alt="alt"></div>`})
-Vue.component('Input', { props: ['label', 'placeholder', 'type'],
-  template: `
-    <Column class="input-container">
-      <Typography class="label">{{label}}</Typography>
-      <input :placeholder="placeholder" :type="type" />
-    </Column>
-    `
-  }
-)
+Vue.component('Column', require('./components/Column.vue').default)
+Vue.component('Row', require('./components/Row.vue').default)
+Vue.component('Typography', require('./components/Typography.vue').default)
+Vue.component('Button', require('./components/Button.vue').default)
+Vue.component('Container', require('./components/Container.vue').default)
+Vue.component('Link', require('./components/Link.vue').default)
+Vue.component('Loader', require('./components/Loader.vue').default)
+Vue.component('Picture', require('./components/Picture.vue').default)
+Vue.component('Input', require('./components/Input.vue').default)
 
 new Vue({
   router,

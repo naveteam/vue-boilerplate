@@ -1,6 +1,6 @@
 <template>
     <Container>
-        <Column>
+        <Column class="center">
             <Input label="Email" placeholder="exemplo@exemplo.com" type="email"/>
             <Input label="Senha" placeholder="******" type="password"/>
         </Column>
@@ -12,3 +12,9 @@ export default {
     name: 'Login'
 }
 </script>
+
+<style lang="scss" scoped>
+    .center {
+        justify-content: center !important;
+    }
+</style>
