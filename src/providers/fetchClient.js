@@ -1,6 +1,6 @@
 import { OAuth2 } from '@naveteam/pandora-frontend'
 
-import { ACCESS_TOKEN, REFRESH_TOKEN } from 'helpers'
+import { ACCESS_TOKEN, REFRESH_TOKEN } from '../helpers/constants'
 
 const options = {
   api_url: process.env.VUE_APP_API_URL,

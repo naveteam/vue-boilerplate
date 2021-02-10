@@ -1,4 +1,4 @@
-import { ACCESS_TOKEN, REFRESH_TOKEN } from 'helpers'
+import { ACCESS_TOKEN, REFRESH_TOKEN } from './constants'
 
 export const getToken = () => localStorage.getItem(ACCESS_TOKEN)
 
