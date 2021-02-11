@@ -7,6 +7,8 @@ export const clearToken = () => {
   localStorage.removeItem(REFRESH_TOKEN)
 }
 
-export const setAccessToken = token => localStorage.setItem(ACCESS_TOKEN, token)
+export const setAccessToken = token =>
+  localStorage.setItem(ACCESS_TOKEN, token)
 
-export const setRefreshToken = token => localStorage.setItem(REFRESH_TOKEN, token)
+export const setRefreshToken = token =>
+  localStorage.setItem(REFRESH_TOKEN, token)

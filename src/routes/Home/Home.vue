@@ -1,6 +1,6 @@
 <template>
     <section>
-        <p>        
+        <p>
             Your vue app
         </p>
     </section>
