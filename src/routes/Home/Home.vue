@@ -8,13 +8,8 @@
 
 <script>
 
-import { setAccessToken } from '../../helpers/auth'
-
 export default {
-    name: 'Home',
-    mounted() {
-        setAccessToken()
-    }
+    name: 'Home'
 }
 </script>
 

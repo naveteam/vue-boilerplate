@@ -1,3 +1,3 @@
-import client from 'providers/fetchClient'
+import client from '../providers/fetchClient'
 
 export const getSomething = () => client.get('endpoint')
