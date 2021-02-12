@@ -5,7 +5,7 @@ import * as Sentry from '@sentry/vue'
 import { version, name } from '../package.json'
 
 import App from './App.vue'
-import Home from './routes/Home'
+import { Home } from './routes'
 
 Vue.use(VueRouter)
 
