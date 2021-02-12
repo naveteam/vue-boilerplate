@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import * as Sentry from '@sentry/browser'
+import * as Sentry from '@sentry/vue'
 
 import { version, name } from '../package.json'
 
